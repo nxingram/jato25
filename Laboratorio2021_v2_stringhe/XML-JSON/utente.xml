@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utenti>
+	<utente>
+		<nome>mauro</nome>
+		<cognome>bogliaccino</cognome>
+		<professione>
+			<primaria>docente</primaria>
+		</professione>
+	</utente>
+	<utente>
+		<nome>mauro</nome>
+		<cognome>bogliaccino</cognome>
+		<professione>
+			<primaria>docente</primaria>
+		</professione>
+	</utente>
+</utenti>

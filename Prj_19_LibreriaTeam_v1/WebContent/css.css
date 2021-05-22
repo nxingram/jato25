@@ -1,0 +1,83 @@
+
+body{
+    background: #666;
+}
+
+.topBar {
+    background: rgb(13, 73, 88);
+    color:#efefef;
+    position:fixed; /* fissa rispetto alla finestra */
+    width:100%;
+}
+
+.wrapper    {
+    background:#fff;
+    padding-top:2rem;
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    flex-flow: column nowrap; /* imposto il modulo FLEXBOX in VERTICALE sui figli, cioè HEADER, COLUMNWRAPPER e FOOTER*/
+    min-height: 100vh; /*vh è una misura relativa al VIEWPORT. 100vh equivale al 100% del viewport*/
+    
+
+    /*NB Il viewport è in pratica la dimensione della finestra del browser */
+}
+
+.columnWrapper {
+    display: flex; /* assegna la proprietà FLEXBOX al genitore*/
+    flex-flow:row nowrap; /*proprietà di default: affianca sulla RIGA e non andare a capo se finisci lo spazio*/
+
+    flex-grow:1; /*gli ordino di allargarsi a occupare tutto lo spazio disponibile, ma in VERTICALE perché */
+    /* il mio flex-flow è di tipo COLUMN */
+    
+}
+
+
+.main {
+    width:100%;
+
+}
+
+
+
+.footer {
+    background:#222;
+    color:#efefef;
+}
+h1{
+	   background: #222;
+	   color:#efefef;
+}
+
+.btnCliccami{
+	width:200%;
+}
+#table_dipendenti td, #table_dipendenti th {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  width:40%;
+}
+
+#table_dipendenti tr:nth-child(even){background-color: #f2f2f2;}
+
+#table_dipendenti tr:hover {background-color: #ddd;}
+
+#table_dipendenti th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+td.checked {
+text-decoration: line-through;
+}
+
+
+
+
+
+

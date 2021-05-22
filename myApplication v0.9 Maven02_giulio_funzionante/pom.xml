@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>myMavenGroup</groupId>
+	<artifactId>MyApplication</artifactId>
+	<version>11</version>
+	<packaging>war</packaging>
+
+	<properties>
+		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+		<junit.version>4.12</junit.version>
+		<path>/MyApplication</path>
+		<javax.servlet-api.version>2.5</javax.servlet-api.version>
+	</properties>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<server>TomcatServer</server>
+					<path>${path}</path>
+					<update>true</update>
+					<username>mvn</username>
+					<password>tomcat</password>
+					<update>true</update>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${javax.servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		
+	</dependencies>
+	
+	
+	
+	
+	<profiles>
+		<profile>
+			<id>svil</id>
+			<properties>
+				<env.folder>svil</env.folder>
+				<tomcat.manager.url>http://localhost:8080/manager/text</tomcat.manager.url>
+				<tomcat.manager.user>mvn</tomcat.manager.user>
+				<tomcat.manager.password>tomcat</tomcat.manager.password>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>prod</id>
+			<properties>
+				<env.folder>prod</env.folder>
+				<tomcat.manager.url>http://xxxxxx:8080/manager/text</tomcat.manager.url>
+				<tomcat.manager.user>manager</tomcat.manager.user>
+				<tomcat.manager.password>xxxxxxxxxxxx</tomcat.manager.password>
+			</properties>
+		</profile>
+		
+	</profiles>
+	
+</project>

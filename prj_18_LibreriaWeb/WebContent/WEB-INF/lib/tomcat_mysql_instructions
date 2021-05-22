@@ -1,0 +1,11 @@
+->> solo x tomcat, springboot fa tutto da solo
+
+x progetto 
+(molto prob non serve, basta in tomcat)
+- aggiungere lib mysql a buildpath del progetto
+
+x tomcat
+- aprire server ->> tomcat ->>doppio click
+- open launch configuration
+- classpath ->> user entries ->> add Jar mysql ->> move up!
+ 

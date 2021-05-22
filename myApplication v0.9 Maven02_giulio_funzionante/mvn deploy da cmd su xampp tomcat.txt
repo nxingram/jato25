@@ -1,0 +1,6 @@
+# aprire path cartella dove si ha il pom.xml
+
+
+mvn clean tomcat7:deploy -Psvil
+
+# PSvil -> ambiente sviluppo

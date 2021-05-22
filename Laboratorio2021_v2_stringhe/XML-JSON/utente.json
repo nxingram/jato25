@@ -1,0 +1,22 @@
+[
+	{
+		"utente": {
+			"nome": "mauro",
+			"cognome": "bogliaccino",
+			"professione": [
+				"test1",
+				"test2"
+			]
+		}
+	},
+	{
+		"utente": {
+			"nome": "mauro",
+			"cognome": "bogliaccino",
+			"professione": [
+				"test1",
+				"test2"
+			]
+		}
+	}
+]

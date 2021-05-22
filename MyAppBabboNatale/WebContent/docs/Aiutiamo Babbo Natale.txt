@@ -1,0 +1,22 @@
+Aiutiamo Babbo Natale
+Babbo Natale è molto affaticato, non riesce a star dietro alle consegne!
+Ha chiesto il nostro aiuto: la sua idea è farsi aiutare da altri aspiranti babbo natale,
+ma ha bisogno di un'applicazione per assegnare a ciascuno di essi un sacco di doni
+e la lista delle consegne. I babbi, collegandosi al sito col telefono troveranno
+ciascuno il proprio elenco di consegne e potranno confermare le consegne man
+mano che vengono effettuate.
+Ha preparato una bozza di layout e ci chiede di realizzare il progetto di dettaglio
+dell'applicazione con workflow e diagramma della classi.
+Se possibile, chiede di sviluppare alcune viste dell'app ed eventualmente qualche
+funzionalità.
+Aiutiamo Babbo Natale!
+
+Ricapitolando
+Si richiede di:
+analizzare la bozza di layout fornita
+disegnare il diagramma dei casi d'uso
+disegnare il workflow del progetto
+disegnare il diagramma delle classi
+implementare l'interfaccia in html (o testuale da linea di comando)
+progettare (e possibilmente implementare) i model del progetto
+progettare (e possibilmente implementare) il controller
